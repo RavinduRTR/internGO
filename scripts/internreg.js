@@ -1,3 +1,5 @@
-function diValidate(){
+function doValidate(){
+
+    let 
     
 }
