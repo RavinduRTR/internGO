@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         
+         body {
+            background-image: url('../img/backgroundimg/internLogin2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 0.3); 
+            background-blend-mode: darken; 
+        }
+
+        .headercl{
+            display: flex;
+            justify-content: center;
+        }
+
+        .mainContainer{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+        }
+
+        .formContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black; 
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+
+        .imgcl{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: block;
+        }
+
+        .imgContainer{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .formRow{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .formRow label{
+            width: 30%;
+            margin-right: 10px;
+            font-size: 18px;
+            font-weight:200;
+        }
+
+        .formRow input{
+            width: 70%;
+            padding: 8px;
+            box-sizing: border box;
+            background-color: transparent;
+            border: 1px solid black;
+            outline:none;            
+        }
+
+        .btncl {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btncl:hover {
+            background-color: #0056b3;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+
+    
+    <div class="mainContainer">
+
+        <form name="internRegistration" onsubmit="return doValidate()" method="POST" action="" class="formContainer">
+    
+            <div class="headercl">
+                <h1 class="headerh1">Welcome to Intern Enrollment</h1>
+            </div>
+
+            <div class="imgContainer">
+                <img src="img/logoRW.jpg" alt = "internGo_LOGO" class="imgcl">
+            </div>
+
+
+            <div class="formRow">
+                <label for="nameWithini" class="labelcl">Name with Initials</label>
+                <input type="text" class="inptcls" name="txtnamewithini">
+            </div>
+
+            <div class="formRow">
+                <label for="nic" class="labelcl">National Identity Card No</label>
+                <input type="text" class="inptcl" name = "nic">
+            </div>
+
+            <div class="formRow">
+                <label for="userName" class="labelcl">User Name</label>
+                <input type="text" class="inptcl" name = "userName">
+            </div>
+
+            <div class="formRow">
+                <label for="password" class="labelcl">Password</label>
+                <input type="password" class="inptcl" name = "password">
+            </div>
+
+            <div class="formRow">
+                <label for="confirmPassword" class="labelcl">Confirm Password</label>
+                <input type="password" class="inptcl" name = "confirmPassword">
+            </div>
+
+    
+            <input type="submit" value="Create Your Account" name="internAcc" class="btncl">
+    
+    
+        </form>
+    
+    </div>
+    
+
+</body>
+</html>
